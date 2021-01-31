@@ -29,11 +29,15 @@ module.exports = function(deployer) {
 };
 ```
 ### Deploy new erc20 token using truffle
-1. Install dependencies.
+1. Install dependencies:
 ```sh
 $ npm i
 ```
-2. Deploy new erc20 token.
+2. Deploy new erc20 token:
 ```sh
 $ truffle migrate --network rinkeby # This will deploy on rinkeby testnet!
+```
+3. (Optional)Verify your erc20 token on etherscan:
+```sh
+$ truffle run verify MyToken --network rinkeby # This will use rinkeby testnet!
 ```
